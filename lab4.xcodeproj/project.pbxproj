@@ -58,11 +58,11 @@
 			children = (
 				2E2B9C4A1E552F4E0036B8D8 /* AppDelegate.swift */,
 				2E2B9C4C1E552F4E0036B8D8 /* ViewController.swift */,
+				2E2B9C5C1E55363F0036B8D8 /* SecondViewController.swift */,
 				2E2B9C4E1E552F4E0036B8D8 /* Main.storyboard */,
 				2E2B9C511E552F4E0036B8D8 /* Assets.xcassets */,
 				2E2B9C531E552F4E0036B8D8 /* LaunchScreen.storyboard */,
 				2E2B9C561E552F4E0036B8D8 /* Info.plist */,
-				2E2B9C5C1E55363F0036B8D8 /* SecondViewController.swift */,
 			);
 			path = lab4;
 			sourceTree = "<group>";
