@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
-    var places = ["Atlantis","China","Mexico","Pompeii"]
+    var places = ["Atlantis","China","Mexico","Pompeii","UnitedStates"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imageView!.image = UIImage(named: places[indexPath.row]+"_flag")
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "oneSegue", sender: nil)
     }
     
     
