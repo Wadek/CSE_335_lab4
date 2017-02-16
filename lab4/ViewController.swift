@@ -34,7 +34,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "oneSegue", sender: nil)
+        performSegue(withIdentifier: "oneSegue", sender: places[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as! SecondViewController
+        dest.fromfirst = sender as! String
+        
     }
     
     

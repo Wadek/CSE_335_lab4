@@ -14,9 +14,12 @@ class SecondViewController : UIViewController {
 
     @IBOutlet weak var mainTitle: UILabel!
     
+    var fromfirst = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
+        mainTitle.text = fromfirst
         
     }
     
